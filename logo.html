@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #logo {
+
+            color: #639;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cls-1 {
+            fill: none;
+            stroke: #639;
+            stroke-width: 6px;
+            stroke-miterlimit: 10;
+            stroke-dasharray: 289px;
+            stroke-dashoffset: 289px;
+            animation: line-anim 3s ease forwards;
+        }
+
+        .cls-2 {
+            fill: none;
+            stroke: #639;
+            stroke-miterlimit: 10;
+            stroke-dasharray: 239px;
+            stroke-dashoffset: 239px;
+            animation: line-anim 2s ease forwards;
+            animation-delay: 2s;
+        }
+
+        .zhi {
+            stroke-dasharray: 244px;
+            stroke-dashoffset: 244px;
+            stroke-width: 0.5px;
+            fill: none;
+            stroke: #639;
+            animation: line-fill 5s ease forwards;
+            animation-delay: 3s;
+        }
+
+        .she {
+            fill: none;
+            stroke: #639;
+            stroke-dasharray: 241px;
+            stroke-dashoffset: 241px;
+            stroke-width: 0.5px;
+            animation: line-fill 5s ease forwards;
+            animation-delay: 3.5s;
+        }
+
+        .jing {
+            stroke-width: 0.5px;
+            fill: none;
+            stroke: #639;
+            stroke-dasharray: 300px;
+            stroke-dashoffset: 300px;
+            animation: line-fill 5s ease forwards;
+            animation-delay: 4s;
+        }
+
+        .guan {
+            stroke-width: 0.5px;
+            fill: none;
+            stroke: #639;
+            stroke-dasharray: 250px;
+            stroke-dashoffset: 250px;
+            animation: line-fill 5s ease forwards;
+            animation-delay: 4.5s;
+        }
+
+        .sanjiao {
+            animation: line-fill 4s ease forwards;
+            animation-delay: 5s;
+            fill: none;
+
+
+        }
+
+        .text {
+            stroke-width: 0.5px;
+            fill: none;
+            stroke: #639;
+            stroke-dasharray: 250px;
+            stroke-dashoffset: 250px;
+            animation: line-anim 4s ease forwards;
+        }
+
+        .text-e {
+            animation-delay: 3s;
+        }
+
+        .text-p {
+            animation-delay: 3.5s;
+        }
+
+        .text-a {
+            animation-delay: 4s;
+        }
+
+        .text-c {
+            animation-delay: 4.5s;
+        }
+
+        .text-s {
+            animation-delay: 5s;
+        }
+
+        @keyframes line-anim {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes line-fill {
+            to {
+                stroke-dashoffset: 0;
+                fill: #639;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 135.01 161.88"
+        width="300"
+        id="logo">
+        <line class="cls-1"
+            x1="6.33"
+            y1="118.32"
+            x2="6.33"
+            y2="118.32" />
+
+        <!--    this is the fat line -->
+        <path class="cls-1"
+            d="M0,3.06c34.86.3,84,.3,118.68,0-3.46,3.59-4.3,0,0,0C81,41.36,40.92,82.74,3.69,120.36" />
+        <polyline class="cls-2"
+            points="88.89 56.35 26.43 121.77 135.01 121.77 135.01 121.77" />
+        <!-- scape -->
+        <path class="text text-s"
+            d="M131.6,72a4.46,4.46,0,0,0,1.09-3.24c0-1.61-.59-3.17-1.91-3.12s-1.66,1.84-1.89,3.15c-.32,1.84-.63,4.38-3,4.28s-2.9-2.44-2.9-4.26A5.36,5.36,0,0,1,125,64.24l.68.76a4.6,4.6,0,0,0-1.77,3.8c0,1.26.34,3.17,2,3.23s1.79-1.68,2.06-3.38c.34-2,.72-4,2.8-4s2.91,2,2.89,4.11a5.46,5.46,0,0,1-1.38,3.87Z" />
+        <path class="text text-c"
+            d="M124.56,83.83A5.29,5.29,0,0,1,123,80.05a5.29,5.29,0,1,1,10.58,0A5.42,5.42,0,0,1,132,83.83l-.65-.67a4.43,4.43,0,0,0,1.23-3.11,4.33,4.33,0,0,0-8.65,0,4.39,4.39,0,0,0,1.28,3.09Z" />
+        <path class="text text-a"
+            d="M133.48,95.91H123.11v-1h2.21a4.85,4.85,0,0,1-2.38-4.24,5.34,5.34,0,0,1,10.67,0,4.71,4.71,0,0,1-2.39,4.24h2.26ZM128.3,86.4A4.16,4.16,0,0,0,124,90.64c0,5.77,8.67,5.77,8.67,0A4.14,4.14,0,0,0,128.3,86.4Z" />
+        <path class="text text-p"
+            d="M118.79,98.7h14.69v1H131a5.09,5.09,0,0,1-2.73,9.53,5,5,0,0,1-5.38-5.27,4.67,4.67,0,0,1,2.59-4.28h-6.72Zm9.51,9.51a4,4,0,0,0,4.34-4.24,4.37,4.37,0,0,0-8.73,0A4,4,0,0,0,128.3,108.21Z" />
+        <path class="text text-e"
+            d="M128.3,111.18a5.21,5.21,0,0,1,5.35,5.27c0,2.91-1.78,5.52-5.83,5.12v-9.35a4.09,4.09,0,0,0-3.85,4.23,4.86,4.86,0,0,0,1.58,3.73l-.59.74a5.72,5.72,0,0,1-2-4.47A5.08,5.08,0,0,1,128.3,111.18Zm.42,9.46c2.56,0,4-1.7,4-4.19a4.16,4.16,0,0,0-4-4.23Z" />
+        <!--   小三角 -->
+        <polyline class="sanjiao"
+            points="134.01 8.94 122.34 22.28 134.01 22.28 134.01 8.94" />
+        <!--   zhi -->
+        <path class="zhi"
+            d="M1.13,139.06H12.57v.84H4.88l-1.57,7.72H8.43a2,2,0,0,0,2-2v-3.06h.84v3.06a2.91,2.91,0,0,1-2.88,2.88H7.18v4.91h5.18v.81H7.18v5.94l5.52-.68.1.84L1,161.74l-.07-.83,5.41-.68v-6h-5v-.81h5v-4.91H2.26L4,139.9H1.13ZM15.05,145l4.42,7.35a47.29,47.29,0,0,0,3.2-10.49H14.42l.61-3.92.83.15L15.39,141h9.79v.84H23.53A46.92,46.92,0,0,1,20,153.16l5,8.27-.73.45-4.74-7.8a28.54,28.54,0,0,1-5.62,7.74l-.6-.6a28.32,28.32,0,0,0,5.73-8l-4.74-7.83Z" />
+        <!--   she -->
+        <path class="she"
+            d="M38.53,146.6l2.85-6.2a2.93,2.93,0,0,1,3-2H55a2.92,2.92,0,0,1,3,2l2.86,6.2-.74.36-2.85-6.22a2.34,2.34,0,0,0-2.3-1.55H44.42a2.35,2.35,0,0,0-2.31,1.55c-.86,2-1.93,4.24-2.85,6.22Zm3.61-1.91H57.23v.83H50.09v3.93h9.84v.81H50.09v3h6.15a2.37,2.37,0,0,1,2.38,2.41v3.66a2.35,2.35,0,0,1-2.38,2.38H43.13a2.35,2.35,0,0,1-2.38-2.38V155.7a2.37,2.37,0,0,1,2.38-2.41h6.13v-3H39.44v-.81h9.82v-3.93H42.14Zm14.1,16.24a1.55,1.55,0,0,0,1.54-1.57V155.7a1.55,1.55,0,0,0-1.54-1.57H43.13a1.55,1.55,0,0,0-1.54,1.57v3.66a1.55,1.55,0,0,0,1.54,1.57Z" />
+        <!--   jing -->
+        <path class="jing"
+            d="M86.75,145.89v1.91H97.59v.84H75.06v-.84H85.92v-1.91Zm-5.2,12.22a30.77,30.77,0,0,1-5.76,3.48l-.34-.73A28.8,28.8,0,0,0,81,157.45Zm.71,2.88h1.59a2.31,2.31,0,0,0,2.25-2.41V156.2H79a2,2,0,0,1-2-2V153a2,2,0,0,1,2-2H93.77a2,2,0,0,1,2,2v1.2a2,2,0,0,1-2,2H86.94v2.38a3.19,3.19,0,0,1-3.09,3.24H82.26Zm-5-20.23a2.36,2.36,0,0,1,2.38-2.38H93a2.35,2.35,0,0,1,2.38,2.38v2.41A2.35,2.35,0,0,1,93,145.55H79.66a2.36,2.36,0,0,1-2.38-2.38Zm1.73,11A1.15,1.15,0,0,0,77.83,153v1.2A1.14,1.14,0,0,0,79,155.36H93.77a1.17,1.17,0,0,0,1.17-1.18V153a1.17,1.17,0,0,0-1.17-1.18Zm-.89-10.28h16.4v-.76A1.53,1.53,0,0,0,93,139.22H79.66a1.53,1.53,0,0,0-1.54,1.54Zm16.4,1.65v-.81H78.12v.81a1.53,1.53,0,0,0,1.54,1.54H93A1.53,1.53,0,0,0,94.52,143.17ZM91.36,157.4l6,3.46-.39.73-6-3.46Z" />
+        <!-- Ífsfd -->
+        <path class="guan"
+            d="M112.43,143.69l3.71,7.88a37.27,37.27,0,0,0,2.25-10.34H111.3v-.83h8a38.4,38.4,0,0,1-2.67,12.16L119.7,159l-.73.34-2.77-5.8a37.77,37.77,0,0,1-4.61,7.77l-.65-.5a35.28,35.28,0,0,0,4.81-8.24l-4-8.56Zm15.72-1.23v6.33c0,7.91-3.58,11.15-8.66,13.09l-.31-.81c4.78-1.81,8.13-4.87,8.13-12.28v-6.33ZM133,154.37V141a1.55,1.55,0,0,0-1.55-1.57h-7a1.55,1.55,0,0,0-1.54,1.57v13.42h-.84V141a2.45,2.45,0,0,1,2.38-2.41h7a2.36,2.36,0,0,1,2.38,2.41v13.42Zm2,7.51h-3.33a2.87,2.87,0,0,1-2.87-2.88v-6.31h.83V159a2,2,0,0,0,2,2H135Z" />
+
+    </svg>
+</body>
+
+
+<script>
+    const logo = document.querySelectorAll('#logo path');
+    console.log(logo);
+    for (let i = 0; i < logo.length; i++) {
+        console.log(logo[i].getTotalLength())
+    }
+</script>
+
+</html>
